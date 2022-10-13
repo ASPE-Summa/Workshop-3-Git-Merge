@@ -30,7 +30,16 @@
     <button id="changeColor" class="btn btn-fore-red btn-bg-black" onclick="changeColor()">Change my color</button>
         <script>
             function changeColor() {
-
+                var btn = document.getElementById("changeColor");
+                if(btn.classList.contains("btn-bg-black")){
+                    btn.classList.remove("btn-bg-black");
+                    btn.classList.add("btn-bg-white");
+                }
+                else{
+                    btn.classList.remove("btn-bg-white");
+                    btn.classList.add("btn-bg-black");
+                }
+                document.activeElement.blur();
             }
         </script>
 </body>
