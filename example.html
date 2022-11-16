@@ -34,10 +34,14 @@
                 if(btn.classList.contains("btn-fore-red")){
                     btn.classList.remove("btn-fore-red");
                     btn.classList.add("btn-fore-green");
+                    btn.classList.remove("btn-bg-black");
+                    btn.classList.add("btn-bg-white");
                 }
                 else{
                     btn.classList.remove("btn-fore-green");
                     btn.classList.add("btn-fore-red");
+                    btn.classList.remove("btn-bg-white");
+                    btn.classList.add("btn-bg-black");
                 }
                 document.activeElement.blur();
             }
