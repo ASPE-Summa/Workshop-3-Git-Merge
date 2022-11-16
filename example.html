@@ -31,13 +31,13 @@
         <script>
             function changeColor() {
                 var btn = document.getElementById("changeColor");
-                if(btn.classList.contains("btn-fore-red")){
-                    btn.classList.remove("btn-fore-red");
-                    btn.classList.add("btn-fore-green");
+                if(btn.classList.contains("btn-bg-black")){
+                    btn.classList.remove("btn-bg-black");
+                    btn.classList.add("btn-bg-white");
                 }
                 else{
-                    btn.classList.remove("btn-fore-green");
-                    btn.classList.add("btn-fore-red");
+                    btn.classList.remove("btn-bg-white");
+                    btn.classList.add("btn-bg-black");
                 }
                 document.activeElement.blur();
             }
